@@ -13,7 +13,7 @@ function getData(page){
             console.log(info);
             $('.tips').attr('data-page',info.page)
             for (var i=0; i<info.data.length;i++) {
-            mybanner.items.push(info.data[i])
+            app.items.push(info.data[i])
             }
         },
         complete:function(){
@@ -45,16 +45,28 @@ console.log(H)
       }
 })
 
- 
-var mybanner= new Vue({
-el:'#mybanner',
-data:{
-    items:[
-   
-    ]
-}
-}) 
+
+
 
 
 
 });
+ // Vue 
+var app= new Vue({
+el:'#app',
+data:{
+    items:[],
+    banners:[
+    {url:"http://s.amazeui.org/media/i/demos/bing-1.jpg"},
+    {url:"http://s.amazeui.org/media/i/demos/bing-2.jpg"},
+    {url:"http://s.amazeui.org/media/i/demos/bing-3.jpg"},
+    {url:"http://s.amazeui.org/media/i/demos/bing-4.jpg"}
+    ],
+    flash:{
+        url:"images/1.jpg_.webp",
+        sprice:"USD  18.2",
+        oldSprice:"USD 44"
+    }
+    
+}
+}) 

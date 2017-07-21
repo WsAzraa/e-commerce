@@ -11,6 +11,9 @@ list-style:none
 body{
     background-color: #EBEBEC;
 }
+.am-slides>li{
+    height: 135px;
+}
 /*商品展示部分*/
 .banner{
     width: 100%;

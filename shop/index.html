@@ -30,7 +30,8 @@
 </head>
 
 <body id="body">
-    <header class="am-topbar  ">
+<div id="app">
+   <header class="am-topbar  ">
         <div class=" am-topbar-collapse" id="doc-topbar-collapse">
             <div class="am-topbar-left">
                 <button class="am-btn am-btn-secondary am-topbar-btn am-btn-sm"><a href="#myslide" class="am-icon-bars" data-am-offcanvas></a></button>
@@ -67,17 +68,8 @@
         <section>
             <div data-am-widget="slider" class="am-slider am-slider-a1" data-am-slider='{"directionNav":false,"slideshowSpeed":3000}'>
                 <ul class="am-slides">
-                    <li>
-                        <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg">
-                    </li>
-                    <li>
-                        <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg">
-                    </li>
-                    <li>
-                        <img src="http://s.amazeui.org/media/i/demos/bing-3.jpg">
-                    </li>
-                    <li>
-                        <img src="http://s.amazeui.org/media/i/demos/bing-4.jpg">
+                    <li v-for="(item,index) in banners">
+                        <img v-bind:src="item.url">
                     </li>
                 </ul>
             </div>
@@ -115,8 +107,8 @@
             <div style="background-color: #fff" class="am-g">
                 <div class="am-u-sm-6 flash_left">
                     <a href="#">
-                        <div class="fl_pic"><img src="images/1.jpg_.webp" alt=""></div>
-                        <div class="flash_left_title">USD59.19 <span>USD79.39</span></div>
+                        <div class="fl_pic"><img :src="flash.url" alt=""></div>
+                        <div class="flash_left_title">{{flash.sprice}} <span>{{flash.oldSprice}}</span></div>
                     </a>
                 </div>
                 <div class="am-u-sm-6 flash_right">
@@ -124,13 +116,13 @@
                         <div class="am-cf">
                             <div class="item-left am-fl">
                                  <div class="item_left_pic">
-                                      <img src="assets/i/app-icon72x72@2x.png" alt="">
+                                      <img :src="flash.url" alt="">
                                 </div>
                             </div>
                             <div class="item-right am-fl">
                                 <div>
-                                    <div>USD 11.07</div>
-                                    <div>USD 23.06</div>
+                                    <div>{{flash.sprice}}</div>
+                                    <div>{{flash.oldSprice}}</div>
                                 </div>
                             </div>
                         </div>
@@ -139,13 +131,13 @@
                         <div class="am-cf">
                             <div class="item-left am-fl">
                                  <div class="item_left_pic">
-                                      <img src="assets/i/app-icon72x72@2x.png" alt="">
+                                      <img :src="flash.url" alt="">
                                 </div>
                             </div>
                             <div class="item-right am-fl">
                                 <div>
-                                    <div>USD 11.07</div>
-                                    <div>USD 23.06</div>
+                                    <div>{{flash.sprice}}</div>
+                                    <div>{{flash.oldSprice}}</div>
                                 </div>
                             </div>
                         </div>
@@ -153,7 +145,7 @@
                 </div>
             </div>
         </div>
-        <div class="banner am-cf" id="mybanner">
+        <div class="banner am-cf">
             <ul id="bannerUl">
                 <li v-for="(item,index) in items"><a href="#"><img v-bind:src="item.url"><span class="price">{{item.price}}</span></a></li>
             </ul>
@@ -162,6 +154,8 @@
             <span class="am-icon-spinner am-icon-spin"></span>
         </div>
     </section>
+</div>
+   
     <!--在这里编写你的代码-->
     <!--[if (gte IE 9)|!(IE)]><!-->
     <script src="assets/js/jquery1.7.2.js"></script>

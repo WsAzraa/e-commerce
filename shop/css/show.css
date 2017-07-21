@@ -36,8 +36,8 @@ s{
 }
 .line{
     display: inline-block;
-    width: 350px;
-    margin-left: 10px;
+    width: 92%;
+    margin-left: 4%;
     border-bottom: 1px solid #ccc;
 }
 #showList span{
