@@ -7,9 +7,12 @@ router.use(function timeLog(req, res, next) {
   next();
 });
 // 定义网站主页的路由
-router.get('/data', function(req, res) {
-  res.send('Birds home page');
+router.get('/data/banner', function(req, res) {
+ 	
 });
+// router.get('/')
+
+
 // 定义 about 页面的路由
 router.get('/about', function(req, res) {
   res.send('About birds');
