@@ -29,13 +29,15 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body id="body">
-<div id="app">
-   <header class="am-topbar  ">
-        <div class=" am-topbar-collapse" id="doc-topbar-collapse">
-            <div class="am-topbar-left">
-                <button class="am-btn am-btn-secondary am-topbar-btn am-btn-sm"><a href="#myslide" class="am-icon-bars" data-am-offcanvas></a></button>
+<body id="body" class="am-with-fixed-header">
+    <div id="app">
+
+        <header data-am-widget="header " class="am-header am-header-default am-header-fixed">
+            <div class="am-header-left am-header-nav">
                 <!-- 链接触发器， href 属性为目标元素 ID -->
+                <a href="#myslide" data-am-offcanvas>
+     <i class="am-header-icon am-icon-home"></i>
+</a>
                 <!-- 侧边栏内容 -->
                 <div id="myslide" class="am-offcanvas">
                     <div class="am-offcanvas-bar">
@@ -52,110 +54,112 @@
                     </div>
                 </div>
             </div>
-            <h1 class="am-topbar-brand">
-    <a href="#">BAYAX MALL</a>
-  </h1>
-            <div class="am-topbar-right">
-                <button class="am-btn am-btn-secondary am-topbar-btn am-btn-sm am-icon-cart-plus"></button>
+            <h1 class="am-header-title">
+          Amaze UI
+      </h1>
+            <div class="am-header-right am-header-nav">
+                <a href="#user-link" class="">
+
+                <i class="am-header-icon am-icon-search"></i>
+          </a>
+                <a href="#cart-link" class="">
+
+                <i class="am-header-icon am-icon-shopping-cart"></i>
+          </a>
             </div>
-            <div class="am-topbar-right">
-                <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm am-icon-search"></button>
-            </div>
-        </div>
-    </header>
-    <section id="wrapper">
-        <!-- nav -->
-        <section>
-            <div data-am-widget="slider" class="am-slider am-slider-a1" data-am-slider='{"directionNav":false,"slideshowSpeed":3000}'>
-                <ul class="am-slides">
-                    <li v-for="(item,index) in banners">
-                        <img v-bind:src="item.url">
+        </header>
+        <section id="wrapper">
+            <!-- nav -->
+            <section>
+                <div data-am-widget="slider" class="am-slider am-slider-a1" data-am-slider='{"directionNav":false,"slideshowSpeed":3000}'>
+                    <ul class="am-slides">
+                        <li v-for="(item,index) in banners">
+                            <img v-bind:src="item.url">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <div style="background-color: #fff" class="recommend">
+                <ul class="am-cf  recommendUl">
+                    <li class="am-fl">
+                        <a href="#">
+                            <div class="pic"><img src="assets/i/app-icon72x72@2x.png" alt=""></div>
+                            <div class="title">商品</div>
+                        </a>
+                    </li>
+                    <li class="am-fl">
+                        <a href="#">
+                            <div class="pic"><img src="assets/i/app-icon72x72@2x.png" alt=""></div>
+                            <div class="title">商品</div>
+                        </a>
+                    </li>
+                    <li class="am-fl">
+                        <a href="#">
+                            <div class="pic"><img src="assets/i/app-icon72x72@2x.png" alt=""></div>
+                            <div class="title">商品</div>
+                        </a>
+                    </li>
+                    <li class="am-fl">
+                        <a href="#">
+                            <div class="pic"><i class="am-icon-tasks"></i></div>
+                            <div class="title">更多</div>
+                        </a>
                     </li>
                 </ul>
             </div>
-        </section>
-        <div style="background-color: #fff" class="recommend">
-            <ul class="am-cf  recommendUl">
-                <li class="am-fl">
-                    <a href="#">
-                        <div class="pic"><img src="assets/i/app-icon72x72@2x.png" alt=""></div>
-                        <div class="title">商品</div>
-                    </a>
-                </li>
-                <li class="am-fl">
-                    <a href="#">
-                        <div class="pic"><img src="assets/i/app-icon72x72@2x.png" alt=""></div>
-                        <div class="title">商品</div>
-                    </a>
-                </li>
-                <li class="am-fl">
-                    <a href="#">
-                        <div class="pic"><img src="assets/i/app-icon72x72@2x.png" alt=""></div>
-                        <div class="title">商品</div>
-                    </a>
-                </li>
-                <li class="am-fl">
-                    <a href="#">
-                        <div class="pic"><i class="am-icon-tasks"></i></div>
-                        <div class="title">更多</div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="flash">
-            <div style="width: 100%;height: 40px;">Falsh </div>
-            <div style="background-color: #fff" class="am-g">
-                <div class="am-u-sm-6 flash_left">
-                    <a href="#">
-                        <div class="fl_pic"><img :src="flash.url" alt=""></div>
-                        <div class="flash_left_title">{{flash.sprice}} <span>{{flash.oldSprice}}</span></div>
-                    </a>
-                </div>
-                <div class="am-u-sm-6 flash_right">
-                    <a href="#">
-                        <div class="am-cf">
-                            <div class="item-left am-fl">
-                                 <div class="item_left_pic">
-                                      <img :src="flash.url" alt="">
+            <div class="flash">
+                <div style="width: 100%;height: 40px;">Falsh </div>
+                <div style="background-color: #fff" class="am-g">
+                    <div class="am-u-sm-6 flash_left">
+                        <a href="#">
+                            <div class="fl_pic"><img :src="flash.url" alt=""></div>
+                            <div class="flash_left_title">{{flash.sprice}} <span>{{flash.oldSprice}}</span></div>
+                        </a>
+                    </div>
+                    <div class="am-u-sm-6 flash_right">
+                        <a href="#">
+                            <div class="am-cf">
+                                <div class="item-left am-fl">
+                                    <div class="item_left_pic">
+                                        <img :src="flash.url" alt="">
+                                    </div>
+                                </div>
+                                <div class="item-right am-fl">
+                                    <div>
+                                        <div>{{flash.sprice}}</div>
+                                        <div>{{flash.oldSprice}}</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item-right am-fl">
-                                <div>
-                                    <div>{{flash.sprice}}</div>
-                                    <div>{{flash.oldSprice}}</div>
+                        </a>
+                        <a href="#">
+                            <div class="am-cf">
+                                <div class="item-left am-fl">
+                                    <div class="item_left_pic">
+                                        <img :src="flash.url" alt="">
+                                    </div>
+                                </div>
+                                <div class="item-right am-fl">
+                                    <div>
+                                        <div>{{flash.sprice}}</div>
+                                        <div>{{flash.oldSprice}}</div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="am-cf">
-                            <div class="item-left am-fl">
-                                 <div class="item_left_pic">
-                                      <img :src="flash.url" alt="">
-                                </div>
-                            </div>
-                            <div class="item-right am-fl">
-                                <div>
-                                    <div>{{flash.sprice}}</div>
-                                    <div>{{flash.oldSprice}}</div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="banner am-cf">
-            <ul id="bannerUl">
-                <li v-for="(item,index) in items"><a href="#"><img v-bind:src="item.url"><span class="price">{{item.price}}</span></a></li>
-            </ul>
-        </div>
-        <div class="tips" id="pull-up" style="display: none;">
-            <span class="am-icon-spinner am-icon-spin"></span>
-        </div>
-    </section>
-</div>
-   
+            <div class="banner am-cf">
+                <ul id="bannerUl">
+                    <li v-for="(item,index) in items"><a href="#"><img v-bind:src="item.url"><span class="price">{{item.price}}</span></a></li>
+                </ul>
+            </div>
+            <div class="tips" id="pull-up" style="display: none;">
+                <span class="am-icon-spinner am-icon-spin"></span>
+            </div>
+        </section>
+    </div>
     <!--在这里编写你的代码-->
     <!--[if (gte IE 9)|!(IE)]><!-->
     <script src="assets/js/jquery1.7.2.js"></script>
