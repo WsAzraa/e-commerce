@@ -7,111 +7,170 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Amaze UI</title>
+    <title>shop</title>
     <!-- Set render engine for 360 browser -->
     <meta name="renderer" content="webkit">
     <!-- No Baidu Siteapp-->
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
-    <!-- Add to homescreen for Safari on iOS -->
+
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
-    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
-    <meta name="msapplication-TileColor" content="#0e90d2">
+
     <link rel="stylesheet" href="assets/css/amazeui.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="css/show.css">
+
 </head>
 
 <body>
     <!--在这里编写你的代码-->
     <header data-am-widget="header" class="am-header am-header-default">
         <div class="am-header-left am-header-nav">
-            <a href="#left-link" class="">
-
-                <i class="am-header-icon am-icon-chevron-left"></i>
-          </a>
+            <a href="#left-link" class=""> <i class="am-header-icon am-icon-chevron-left"></i>
+            </a>
         </div>
         <div class="am-header-right am-header-nav">
-            <a href="#search-link" class="">
-
-                <i class="am-header-icon am-icon-search"></i>
-          </a>
+            <a href="#search-link" class=""> <i class="am-header-icon am-icon-search"></i>
+            </a>
             <a href="#cart-link" class="">
 
                 <i class="am-header-icon am-icon-shopping-cart"></i>
-          </a>
+            </a>
             <a href="#more-link" class="">
 
                 <i class="am-header-icon am-icon-ellipsis-v"></i>
-          </a>
+            </a>
         </div>
     </header>
     <!-- 轮播 -->
-    <section>      
-            <div data-am-widget="slider" class="am-slider am-slider-a1" data-am-slider='{"directionNav":false,"slideshowSpeed":3000}' id="app">
-                <ul class="am-slides">
-                    <li v-for="(item,index) in banners">
-                        <img v-bind:src="item.url">
-                    </li>
-                </ul>
-            </div>
+    <section>
+        <div data-am-widget="slider" class="am-slider am-slider-a1" data-am-slider='{"directionNav":false,"slideshowSpeed":3000}' id="app">
+            <ul class="am-slides">
+                <li v-for="(item,index) in banners">
+                    <img v-bind:src="item.url"></li>
+            </ul>
+        </div>
+
     </section>
-    <section style="background-color: #fff" id="showList">
-        <p>{{introduce}}</p>
-        <h2>{{sprice}}</h2>
-        <s>{{oldsprice}}</s>
-        <p>{{sell}}</p>
-        <span class="line"></span>
-        <div class="am-g" id="showList">
-            <div class="am-u-sm-4" style="text-align: left;"><span>{{feedBacks}}</span> ★★★★★ FeedBacks</div>
-            <div class="am-u-sm-4 bd-l-r" style="text-align: center;"><span>{{orders}}</span> Orders</div>
-            <div class="am-u-sm-4" style="text-align: right;"><span>{{wish}}</span>Wish List</div>
+    <section class="ms-add-session">
+        <span class="ms-add">
+            <span class="ms-add-wish"></span>
+        </span>
+    </section>
+
+
+    <section class="ms-rc-subject">
+        <h1 class="ms-rc-detail-subject">Baseus 10000mAh USB Power Bank 15mm Ultra Slim Powerbank Portable External Battery Charger For iPhone Mobile Phone Poverbank</h1>
+    </section>
+    <section class="ms-detail-price">
+        <div class="detail-price-container">
+            <span class="price-span">US $16.91</span>
+        </div>
+        <p class="detail-origin-price">
+            <del>US $30.75</del>
+        </p>
+        <div class="ms-promotion">
+            <span class="discount">-45%</span>
+            <a href="" class="sale app">
+                <i></i>
+                <em>Price on the app: US $16.61</em>
+                <i></i>
+            </a>
         </div>
     </section>
-    <section style="background: #fff;width: 100%;height: 100px; margin-top: 10px;"></section>
+    <section class="ms-block ms-rc-shadow" style="background:#fff;width: 100%;height: 65px;">
+        <div class="ms-rc-detail-orders-stars">
+            <ul class="sumary-list  util-clearfix">
+                <li>
+                    <p>
+                        <span>123</span>
+                        <span>123</span>
+                    </p>
+                    <p>FeedBacks</p>
+                </li>
+                <li class="second">
+                    <p>146</p>
+                    <p>Orders</p>
+                </li>
+                <li class="last" style="text-align: right;">
+                    <p>1239</p>
+                    <p>Wish List</p>
+                </li>
+            </ul>
+        </div>
+        <div class="ms-rc-detail-coupon ms-rc-ripple ms-rc-custom">
+            <div class="coupon">Discounts & Coupons</div>
+            <span>
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </section>
+
+
+    <section class="ms-detail-sku ms-sku-row">
+        <p class="detail-sku-bar">Ships From,Color</p>
+        <p class="detail-shipping-bar">
+            <span>Shipping cost:</span>
+            <span class="ms-color-ship">Free Shipping</span>
+            <span class="ms-rc-action" style="">SELECT</span>
+        </p>
+    </section>
+    <section class="ms-detail-btn-fixed ms-rc-shadow">
+        <div class="ms-detail-btn-wrap">
+            <div class="store ms-rc-ripple">
+                <a href="#"></a>
+            </div>
+        </div>
+    </section>
+    
     <!-- 评论  -->
-    <section style="background: #fff;width: 100%; margin-top: 10px;" class="am-cf" id="talk">
+   <!--  <section style="background: #fff;width: 100%; margin-top: 10px;" class="am-cf" id="talk">
         <ul class="am-list pinglun">
             <li v-for="(item,index) in items">
                 <a href="#" class="am-g">
-                    <div class="am-u-sm-3"><img :src="item.touxiang" style="border-radius: 50% 50% 50% 50%"></div>
+                    <div class="am-u-sm-3">
+                        <img :src="item.touxiang" style="border-radius: 50% 50% 50% 50%"></div>
                     <div class="am-u-sm-9">
-                    <div>  
-                    <span class="name">{{item.name}}</span>
-                    <span class="am-fr">⭐⭐</span>
+                        <div>
+                            <span class="name">{{item.name}}</span>
+                            <span class="am-fr">⭐⭐</span>
+                        </div>
+                        <div class="date">{{item.date}}</div>
+                        <div class="text">{{item.content}}</div>
                     </div>
-                    <div class="date">{{item.date}}</div>
-                    <div class="text">{{item.content}}</div>
-                    </div>
-                    </a>
+                </a>
             </li>
         </ul>
         <div class="pinglun_more">More</div>
     </section>
     <section style="background: #fff;width: 100%; margin-top: 10px;" class="am-cf seller" id="recommend">
-      <ul class="am-cf">
-        <li class="am-fl" v-for="(item,index) in items"><a href="#"><div><img :src="item.url" alt=""></div><div class="seller_title">{{item.title}}</div></a></li>
-      </ul>
+        <ul class="am-cf">
+            <li class="am-fl" v-for="(item,index) in items">
+                <a href="#">
+                    <div>
+                        <img :src="item.url" alt=""></div>
+                    <div class="seller_title">{{item.title}}</div>
+                </a>
+            </li>
+        </ul>
     </section>
-
-    <!--[if (gte IE 9)|!(IE)]><!-->
+ -->
+    <!--[if (gte IE 9)|!(IE)]>
+    <!-->
     <script src="assets/js/jquery1.7.2.js"></script>
     <!--<![endif]-->
     <!--[if lte IE 8 ]>
-<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
-<![endif]-->
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+    <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+    <![endif]-->
     <script src="assets/js/amazeui.js"></script>
     <script src="js/vue.js"></script>
     <script src="js/show.js"></script>
-    <script>
-    </script>
+    <script></script>
 </body>
