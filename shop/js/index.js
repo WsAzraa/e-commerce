@@ -1,28 +1,28 @@
 $(function() {
 
     function getData(page) {
-        // $.ajax({
-        //     type: 'get',
-        //     url: '/getdata',
-        //     data: {
-        //         page: page
-        //     },
-        //     dataType: 'json',
-        //     beforeSend: function() {
-        //         $('.tips').addClass('loading')
-        //     },
-        //     success: function(info) {
-        //         console.log(info);
-        //         $('.tips').attr('data-page', info.page)
-        //         for (var i = 0; i < info.data.length; i++) {
-        //             app.items.push(info.data[i])
-        //         }
-        //     },
-        //     complete: function() {
-        //         $('.tips').removeClass('loading')
-        //     }
-        // })
-        // 
+        $.ajax({
+            type: 'get',
+            url: '/getdata',
+            data: {
+                page: page
+            },
+            dataType: 'json',
+            beforeSend: function() {
+                $('.tips').addClass('loading')
+            },
+            success: function(info) {
+                console.log(info);
+                $('.tips').attr('data-page', info.page)
+                for (var i = 0; i < info.data.length; i++) {
+                    app.items.push(info.data[i])
+                }
+            },
+            complete: function() {
+                $('.tips').removeClass('loading')
+            }
+        })
+        
       
     }
 
@@ -64,6 +64,9 @@ var app = new Vue({
             url:'images/a.png'
         },
         {
+            url:'images/a.png'
+        },
+      {
             url:'images/a.png'
         }],
         flash: {

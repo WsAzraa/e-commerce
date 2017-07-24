@@ -32,11 +32,11 @@
 <body id="body" class="am-with-fixed-header">
     <div id="app">
 
-        <header data-am-widget="header " class="am-header am-header-default am-header-fixed">
+        <header data-am-widget="header " class="am-header am-header-default am-header-fixed" id="myhead">
             <div class="am-header-left am-header-nav">
                 <!-- 链接触发器， href 属性为目标元素 ID -->
                 <a href="#myslide" data-am-offcanvas>
-     <i class="am-header-icon am-icon-home"></i>
+     <i class="am-header-icon am-icon-bars"></i>
 </a>
                 <!-- 侧边栏内容 -->
                 <div id="myslide" class="am-offcanvas">
@@ -54,7 +54,7 @@
                     </div>
                 </div>
             </div>
-            <h1 class="am-header-title">
+            <h1 class="am-header-title mytitle">
           Amaze UI
       </h1>
             <div class="am-header-right am-header-nav">
@@ -70,7 +70,7 @@
         </header>
         <section id="wrapper">
             <!-- nav -->
-            <section>
+            <section class="lunbo">
                 <div data-am-widget="slider" class="am-slider am-slider-a1" data-am-slider="{'directionNav':false,'slideshowSpeed':2000}" data-am-flexslider="{playAfterPaused: 10}">
                     <ul class="am-slides">
                         <li v-for="(item,index) in banners">
@@ -83,41 +83,52 @@
                 <ul class="am-cf  recommendUl">
                     <li class="am-fl">
                         <a href="#">
-                            <div class="pic"><img src="assets/i/app-icon72x72@2x.png" alt=""></div>
+                            <div class="pic"><img src="images/leimu01.png" alt=""></div>
                             <div class="title">商品</div>
                         </a>
                     </li>
                     <li class="am-fl">
                         <a href="#">
-                            <div class="pic"><img src="assets/i/app-icon72x72@2x.png" alt=""></div>
+                            <div class="pic"><img src="images/leimu02.png" alt=""></div>
                             <div class="title">商品</div>
                         </a>
                     </li>
                     <li class="am-fl">
                         <a href="#">
-                            <div class="pic"><img src="assets/i/app-icon72x72@2x.png" alt=""></div>
+                            <div class="pic"><img src="images/leimu03.png" alt=""></div>
                             <div class="title">商品</div>
                         </a>
                     </li>
                     <li class="am-fl">
-                        <a href="#">
-                            <div class="pic"><i class="am-icon-tasks"></i></div>
+                        <a href="#" class="wra_more">
+                            <div class="pic"><i class="am-icon-th-list"></i></div>
                             <div class="title">更多</div>
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="flash">
-                <div style="width: 100%;height: 40px;">Falsh </div>
-                <div style="background-color: #fff" class="am-g">
+            <a href="#" class="am-cf">
+                <span class="h1">FLASH DEALS</span>
+                <span class="am-fl time">
+                    <span>05</span>:
+                    <span>04</span>:
+                    <span>03</span>
+                </span>
+                <span class="flash-more">Yang</span>
+            </a>
+                <div style="background-color: #fff;  box-shadow:  0px 2px 5px #888888;" class="am-g">
                     <div class="am-u-sm-6 flash_left">
                         <a href="#">
                             <div class="fl_pic"><img :src="flash.url" alt=""></div>
+                            <div class="fl_container">
+                            <div class="fl_text">Dapatkan kupon senilai US $7.00</div>
                             <div class="flash_left_title">{{flash.sprice}} <span>{{flash.oldSprice}}</span></div>
+                            </div>
                         </a>
                     </div>
                     <div class="am-u-sm-6 flash_right">
-                        <a href="#">
+                        <a href="#"  class="top">
                             <div class="am-cf">
                                 <div class="item-left am-fl">
                                     <div class="item_left_pic">
@@ -126,8 +137,8 @@
                                 </div>
                                 <div class="item-right am-fl">
                                     <div>
-                                        <div>{{flash.sprice}}</div>
-                                        <div>{{flash.oldSprice}}</div>
+                                        <div class="min_price">{{flash.sprice}}</div>
+                                        <div class="max_price">{{flash.oldSprice}}</div>
                                     </div>
                                 </div>
                             </div>
@@ -141,8 +152,8 @@
                                 </div>
                                 <div class="item-right am-fl">
                                     <div>
-                                        <div>{{flash.sprice}}</div>
-                                        <div>{{flash.oldSprice}}</div>
+                                        <div class="min_price">{{flash.sprice}}</div>
+                                        <div class="max_price">{{flash.oldSprice}}</div>
                                     </div>
                                 </div>
                             </div>

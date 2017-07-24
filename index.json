@@ -1,0 +1,51 @@
+{
+    "status":"ok",
+    "pageTotal":1,
+    "page":1,
+    "pageSize":4,
+    "data":[
+    {"url":"images/1.jpg_.webp",
+    "id":1,
+    "price":"US10.99"
+    },   {"url":"images/3.jpg_.webp",
+    "id":1,
+    "price":"US8.99"
+    },   {"url":"images/4.jpg_.webp",
+    "id":1,
+    "price":100
+    },   {"url":"images/2.jpg_.webp",
+    "id":1,
+    "price":100
+    },   {"url":"images/4.jpg_.webp",
+    "id":1,
+    "price":100
+    },   {"url":"images/1.jpg_.webp",
+    "id":1,
+    "price":100
+    },   {"url":"images/3.jpg_.webp",
+    "id":1,
+    "price":100
+    },   {"url":"images/2.jpg_.webp",
+    "id":1,
+    "price":100
+    },   {"url":"images/4.jpg_.webp",
+    "id":1,
+    "price":100
+    },   {"url":"images/1.jpg_.webp",
+    "id":1,
+    "price":100
+    },
+       {"url":"images/2.jpg_.webp",
+    "id":1,
+    "price":100
+    },
+       {"url":"images/3.jpg_.webp",
+    "id":1,
+    "price":100
+    },
+       {"url":"images/4.jpg_.webp",
+    "id":1,
+    "price":100
+    }
+    ]
+}
