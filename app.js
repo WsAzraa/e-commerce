@@ -1,6 +1,6 @@
-var express = require('express');
+const express = require('express');
 // var path = require('path');
-var app = express();
+const app = express();
 // const index = require('./router/index')
 const datas = require('./router/data')
 app.use(express.static('shop'))
