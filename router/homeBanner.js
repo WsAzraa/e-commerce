@@ -11,13 +11,13 @@ router.get('/data/banner', function(req, res) {
 	res.json({
 		success: true,
 		data: [{
-			url: 'http://s.amazeui.org/media/i/demos/bing-1.jpg',
+			url: 'images/lunbo1.webp',
 		}, {
-			url: 'http://s.amazeui.org/media/i/demos/bing-2.jpg',
+			url: 'images/lunbo2.webp',
 		}, {
-			url: 'http://s.amazeui.org/media/i/demos/bing-3.jpg',
+			url: 'images/lunbo3.webp',
 		}, {
-			url: 'http://s.amazeui.org/media/i/demos/bing-4.jpg'
+			url: 'images/lunbo4.webp'
 		}]
 	});
 });
