@@ -12,7 +12,7 @@ body{
     background-color: #EBEBEC;
 }
 .am-slides>li{
-    height: 135px;
+
 }
 /*头部*/
 #myhead{
@@ -24,6 +24,9 @@ body{
 #myhead .mytitle{
 color: #000;
 }
+#myhead .mytitle img{
+width: 100%;
+}
 .lunbo{
     box-shadow:  0px 2px 5px #888888;
 }
@@ -33,17 +36,28 @@ color: #000;
     height: 100%;
     padding: 0 4px;
 }
+.banner_title{
+        margin-top: 24px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+    color: #3A3E4A;
+    overflow: hidden;
+}
 .banner ul{
     float: left;
-    background-color: pink;
     width: 100%;
     margin-top: 0;
     margin-bottom: 0;
 }
 .banner ul li{
-    width: 50%;
+    width: 48%;
     background-color: #fff;
     float: left;
+    margin: 1%;
+    box-shadow:  0px 2px 5px #888888;
 }
 .banner li a{
     display: inline-block;
@@ -54,6 +68,20 @@ color: #000;
 }
 .banner li img{
    max-width: 100%;
+}
+#bannerUl .fadeIn{
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 148px;
+    min-height: 148px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .price{
@@ -69,7 +97,10 @@ color: #000;
 
 .tips{
     text-align: center;
-    background-color: #ccc;
+    width: 100%;
+    position: relative;
+    font-size: 44px;
+    color: #E8183E;
 }
 .tips.loading{
     display: block;
@@ -255,26 +286,69 @@ font-size: 12px;
         padding-top: 25px;
     margin-left: 10px;
 }
-@media only screen and (min-width:0px) {
-  .am-topbar-collapse {
-    margin-top: 0;
+
+/*侧边栏*/
+.am-offcanvas-bar{
+    background-color: #fff;
+}
+
+.slide_content{
     padding: 0;
-    width: auto;
-    clear: none;
-  }
 }
-  @media only screen and (max-width: 640px) {
-  .am-topbar-nav {
-float: left;
-  }
-  @media only screen and (min-width:10px) {
-  .am-topbar-left {
-    float: left;
-  }
-  .am-topbar-right {
-    float: right;
-    margin-right: 10px;
-  }
+.slide_user{
+        box-sizing: border-box;
+    height: 148px;
+    background-color: #e62e02;
+    overflow: hidden;
+    background-image: url(//ae01.alicdn.com/kf/HTB198AeHFXXXXX2apXX760XFXXXy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-
+.portrait{
+    padding: 16px;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+}
+#myslide .portrait img{
+        display: block;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.drawer-unlogin{
+        padding: 15px 16px 16px;
+    box-sizing: border-box;
+    width: 100%;
+    white-space: nowrap;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #fff;
+}
+.drawer-signin{
+        padding: 0 6px 0 0;
+    border-right: solid 1px #fff;
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.2;
+}
+.drawer-join{
+        padding-left: 2px;
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.2;
+}
+#myslide a{
+    color: #fff;
+}
+#myslide ul a{
+    color: #000;
+}
+.am-list > li{
+    border:none;
+}
+#myslide .my_icon{
+    margin-right: 20px;
+}
