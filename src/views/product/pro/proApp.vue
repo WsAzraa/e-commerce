@@ -896,8 +896,9 @@ export default {
     };
   },
 
-  components: {
-  },
+  // components: {
+  //   MintUI
+  // },
 
   //已成功挂载，相当ready()
   mounted: function () {
