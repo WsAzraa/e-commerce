@@ -252,12 +252,7 @@
   
     </section>
   
-    <!-- <h1>mint-ui-example</h1>
-  -->
-    <!-- <button @click="aaa()">按钮</button>
-  -->
-    <!-- <mt-button @click.native="popupVisible3 = true" size="large">右侧弹出 popup</mt-button>
-  -->
+
  
  
   </div>
