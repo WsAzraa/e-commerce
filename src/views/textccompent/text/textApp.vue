@@ -6,6 +6,7 @@
   </div>
 </template>
 
+
 <script>
   import Child from 'components/Child.vue';
     import SlideBar from 'components/SlideBar.vue'
