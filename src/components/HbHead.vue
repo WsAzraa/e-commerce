@@ -1,7 +1,7 @@
 <template>
   <div>
 	<x-header class="headfix">{{headfont}}</x-header>
-	<div class="headMargin"></div>
+	<div class="headMargin">{{msg}}</div>
   </div>
 </template>
 
@@ -12,6 +12,7 @@ import Lib from 'assets/js/Lib';
 import { XHeader } from 'vux'
 
 export default {
+  props:['msg'],
   data() {
     return {
 

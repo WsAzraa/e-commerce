@@ -1,54 +1,36 @@
 <template>
- <!-- <div></div> -->
- <slide-bar></slide-bar>
+  <div class="parent">
+    <h1>父组件</h1>
+    <Child v-bind:parentToChild="parentMsg"></Child>
+    <slide-bar :spopslide="popslide" :slide="slides"   @change-pop="changePop">侧边栏</slide-bar>
+  </div>
 </template>
 
 <script>
-
-import Lib from 'assets/js/Lib';
-// import 'mint-ui/lib/style.css'//最嗨的是他这个直接引入的是一个css文件
-
-import Vue from 'vue';
-import SlideBar from 'components/SlideBar';
-// import HbHead from 'components/HbHead';
-// import MintUI from 'mint-ui';
-
-// Vue.use(MintUI);
-
-export default {
-  data() {
-    return {
-     
-
-    };
-  },
-
-  components: {
- SlideBar
-  },
- 
-  //已成功挂载，相当ready()
-  mounted: function () {
-    var _this = this;
-    this.$nextTick(function () {
-
-
-    })
-  },
-  //相关操作事件
-  methods: {
-    
-
-
+  import Child from 'components/Child.vue';
+    import SlideBar from 'components/SlideBar.vue'
+  export default{
+     name:"parent",
+    data(){
+      return {
+        parentMsg:'父组件向子组件传值',
+        slides:'侧边栏传递的信息',
+        popslide:false
+      }
+    },
+    components: {Child,SlideBar},
+    methods:{
+       'changePop' (msg) {
+      this.popslide = !this.popslide;
+    }
+    }
   }
-}
 </script>
 
-<style>
+<style lang="less">
 
-
-
-
-
+img{
+	max-width:100%;
+}
 
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="mainWarp">
-	<hb-head headfont="图片"></hb-head>
+	<hb-head headfont="图片" :msg="mssg"></hb-head>
     
     <div class="bgfff martop10 pad10 font14 color666">
     	<p>
@@ -36,7 +36,8 @@ export default {
   },
   data () {
     return {
-      'ajaxResult':{}
+      'ajaxResult':{},
+			'mssg':'123'
     }
   },
     //已成功挂载，相当ready()
