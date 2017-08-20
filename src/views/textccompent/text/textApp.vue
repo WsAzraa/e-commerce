@@ -3,6 +3,7 @@
     <h1>父组件</h1>
     <Child v-bind:parentToChild="parentMsg"></Child>
     <slide-bar :spopslide="popslide" :slide="slides"   @change-pop="changePop">侧边栏</slide-bar>
+    <div>123123123</div>
   </div>
 </template>
 
