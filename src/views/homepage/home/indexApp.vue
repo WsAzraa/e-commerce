@@ -1,16 +1,13 @@
 <template>
   <div id="app">
-  
-    <mt-header fixed title="123"  style="background:#fff;    border-bottom: 1px solid #EBEBEC;">
+
+    <mt-header fixed title="123" style="background:#fff;    border-bottom: 1px solid #EBEBEC;">
       <a style="top: -15px; position: relative;" slot="left">
-        <span class="icon-three-bars three-bar" v-on:click="popslide = !popslide"></span>
+        <span class="icon-three-bars three-bar" v-on:click="changeSli"></span>
       </a>
-        <a class="a-logo"  slot="left">
+      <a class="a-logo" slot="left">
         <img src="../../../assets/image/logo.png">
-      </a> 
-      <!-- <mt-button>关闭</mt-button>
-      <mt-button>关闭</mt-button>
-      <mt-button>关闭</mt-button> -->
+      </a>
       <mt-button slot="right">
         <label class="icon-label">
           <span class="icon-search icon-bayax-home"></span>
@@ -23,84 +20,84 @@
       </mt-button>
     </mt-header>
     <!--logo  -->
-     <!-- <img class="logo" src="../../../assets/image/logo.png"> -->
+    <!-- <img class="logo" src="../../../assets/image/logo.png"> -->
 
-    <mt-popup v-model="popslide" position="left" class="">
-      <div class="slide_user">
-        <div class="portrait">
-          <img src="../../../assets/image/userimg.png">
+    <!-- <mt-popup v-model="popslide" position="left" class="">
+        <div class="slide_user">
+          <div class="portrait">
+            <img src="../../../assets/image/userimg.png">
+          </div>
+          <div class="drawer-unlogin">
+            <a href="login.html" class="drawer-signin" style="color:#eee">Sign IN</a>
+            <a class="drawer-join">Join Free</a>
+          </div>
         </div>
-        <div class="drawer-unlogin">
-          <a href="login.html" class="drawer-signin" style="color:#eee">Sign IN</a>
-          <a class="drawer-join">Join Free</a>
-        </div>
-      </div>
-      <ul class="am-list am-list-border">
-        <li>
-          <a href="index.html">
-            <i class="icon-home"></i>
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="icon-file" style="color:#000"></i>
-            My Orders
-          </a>
-        </li>
-        <li>
-          <a href="shoppingcart.html">
-            <i class="icon-cart"></i>
-            Cart
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="icon-heart"></i>
-            Wish List
-          </a>
-        </li>
-      </ul>
-  
-    </mt-popup>
-  
+        <ul class="am-list am-list-border">
+          <li>
+            <a href="index.html">
+              <i class="icon-home"></i>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="icon-file" style="color:#000"></i>
+              My Orders
+            </a>
+          </li>
+          <li>
+            <a href="shoppingcart.html">
+              <i class="icon-cart"></i>
+              Cart
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="icon-heart"></i>
+              Wish List
+            </a>
+          </li>
+        </ul>
+    
+      </mt-popup> -->
+    <slide-bar :spopslide="popslide"  @change-pop="changePop"></slide-bar>
     <!-- 轮播图 -->
     <section class="slides-bayax">
       <mt-swipe :auto="4000" class="swipe">
-        <mt-swipe-item v-for="(item,index) in slides">
+        <mt-swipe-item v-for="item in slides">
           <a href="../product/product.html">
             <img v-bind:src="item.url">
           </a>
-  
+
         </mt-swipe-item>
       </mt-swipe>
     </section>
-  
+
     <!--第三部分  -->
     <section class="third">
       <div class="ms-rc-category ms-rc-shadow" data-spm="home-category">
         <ul class="util-clearfix">
-  
+
           <li class="ms-rc-ripple ms-rc-custom">
             <a href="../product/product.html" pjax="">
               <div class="pic">
-  
+
                 <img src="//ae01.alicdn.com/kf/HTB18RmXPXXXXXcBXFXX760XFXXXu.png" alt="category image">
               </div>
               <div class="title">Apparel &amp; Accessories</div>
             </a>
           </li>
-  
+
           <li class="ms-rc-ripple ms-rc-custom">
             <a href="../product/product.html" pjax="">
               <div class="pic">
-  
+
                 <img src="//ae01.alicdn.com/kf/HTB1Pi5iPXXXXXbdXpXX760XFXXXL.png" alt="category image">
               </div>
               <div class="title">Jewelry</div>
             </a>
           </li>
-  
+
           <li class="ms-rc-ripple ms-rc-custom">
             <a href="../product/product.html" pjax="">
               <div class="pic">
@@ -109,22 +106,22 @@
               <div class="title">Electronics</div>
             </a>
           </li>
-  
+
           <li class="ms-rc-ripple ms-rc-custom">
             <a href="../product/product.html" pjax="">
               <div class="pic">
-  
+
                 <i class="icon-list-unordered third-more"></i>
-  
+
               </div>
               <div class="title">All Categories</div>
             </a>
           </li>
-  
+
         </ul>
       </div>
     </section>
-  
+
     <section>
       <div class="ms-rc-active" data-role="ws-floor" data-spm="home-floor">
         <div class="ms-lego-home-deals" data-scrolltrigger="0">
@@ -133,7 +130,7 @@
               <a href="../product/product.html" class="util-clearfix">
                 <div class="title">
                   <span>Flash Deals</span>
-  
+
                   <span id="time-j6hgavbv" class="fadeIn">
                     <span data-role="hour">01</span>
                     :
@@ -141,7 +138,7 @@
                     :
                     <span data-role="second">21</span>
                   </span>
-  
+
                 </div>
                 <span class="home-deals-more">MORE</span>
               </a>
@@ -163,7 +160,7 @@
                   </a>
                 </div>
                 <div class="col-6 home-deals-picture-right">
-  
+
                   <a href="../product/product.html" class="ms-rc-ripple ms-rc-custom">
                     <div class="util-clearfix">
                       <div class="item-left">
@@ -179,7 +176,7 @@
                       </div>
                     </div>
                   </a>
-  
+
                   <a href="../product/product.html" class="ms-rc-ripple ms-rc-custom">
                     <div class="util-clearfix">
                       <div class="item-left">
@@ -195,19 +192,19 @@
                       </div>
                     </div>
                   </a>
-  
+
                 </div>
               </div>
             </div>
           </div>
         </div>
-  
+
       </div>
-  
+
     </section>
-  
+
     <section>
-      <div class="ms-rc-qp" id="quality-picks"  v-infinite-scroll="loadMore" infinite-scroll-disabled="loading" infinite-scroll-distance="10">
+      <div class="ms-rc-qp" id="quality-picks" v-infinite-scroll="loadMore" infinite-scroll-disabled="loading" infinite-scroll-distance="10">
         <div class="title">JUST FOR YOU</div>
         <div class="util-clearfix">
           <div class="column">
@@ -229,10 +226,10 @@
                 <div class="price">US $ {{item.lowerPrice}}</div>
               </a>
             </div>
-  
+
           </div>
         </div>
-         <div v-show='loading' class="md-loading" data-scrolltrigger="2">
+        <div v-show='loading' class="md-loading" data-scrolltrigger="2">
           <div class="preloader-wrapper small active" style="font-size: 0;">
             <div class="spinner-layer spinner-red-only">
               <div class="circle-clipper left">
@@ -247,14 +244,11 @@
             </div>
           </div>
         </div>
-        
-      </div>
-  
-    </section>
-  
 
- 
- 
+      </div>
+
+    </section>
+
   </div>
 </template>
 
@@ -266,13 +260,13 @@ import 'mint-ui/lib/style.css'//最嗨的是他这个直接引入的是一个css
 import Vue from 'vue';
 
 import MintUI from 'mint-ui';
-
+import SlideBar from 'components/SlideBar.vue'
 Vue.use(MintUI);
 
 export default {
   data() {
     return {
-      loading : false,
+      loading: false,
       popslide: false,
       // 轮播图
       slides: [
@@ -283,60 +277,53 @@ export default {
       ],
       // JUST FOR YOU
       foryoudatacolume: [
-        {       
-          "image350Path": "https://ae01.alicdn.com/kf/HTB1qcNWOXXXXXXbaFXXq6xXFXXXB.jpg_350x350.jpg",        
-          "lowerPrice": "10.44",       
-        }, {        
-          "image350Path": "https://ae01.alicdn.com/kf/HTB1VkIGSFXXXXXqXFXXq6xXFXXX1.jpg_350x350.jpg",        
-          "lowerPrice": "106.3",      
-        }, {       
+        {
+          "image350Path": "https://ae01.alicdn.com/kf/HTB1qcNWOXXXXXXbaFXXq6xXFXXXB.jpg_350x350.jpg",
+          "lowerPrice": "10.44",
+        }, {
+          "image350Path": "https://ae01.alicdn.com/kf/HTB1VkIGSFXXXXXqXFXXq6xXFXXX1.jpg_350x350.jpg",
+          "lowerPrice": "106.3",
+        }, {
           "image350Path": "https://ae01.alicdn.com/kf/HTB1lXrGLFXXXXblXFXXq6xXFXXXn.jpg_350x350.jpg",
           "lowerPrice": "8.0",
-         
+
         }, {
-          "image350Path": "https://ae01.alicdn.com/kf/HTB16ZVJJXXXXXanXpXXq6xXFXXXI.jpg_350x350.jpg",        
-          "lowerPrice": "13.99", 
+          "image350Path": "https://ae01.alicdn.com/kf/HTB16ZVJJXXXXXanXpXXq6xXFXXXI.jpg_350x350.jpg",
+          "lowerPrice": "13.99",
         }, {
-          "image350Path": "https://ae01.alicdn.com/kf/HTB11v8iSXXXXXXIXXXXq6xXFXXXC.jpg_350x350.jpg",       
-          "lowerPrice": "25.87",     
+          "image350Path": "https://ae01.alicdn.com/kf/HTB11v8iSXXXXXXIXXXXq6xXFXXXC.jpg_350x350.jpg",
+          "lowerPrice": "25.87",
         }, {
           "image350Path": "https://ae01.alicdn.com/kf/HTB17AUWOFXXXXXSaXXXq6xXFXXX4.jpg_350x350.jpg",
           "lowerPrice": "21.99",
         }
       ],
-      foryoudatacolume1:[],
-      foryoudatacolume2:[],
+      foryoudatacolume1: [],
+      foryoudatacolume2: [],
 
     };
   },
 
   components: {
+    SlideBar
   },
   computed: {
-  // foryoudatacolume1: function () {
-  //   var lengths = this.foryoudatacolume.length;
-  //   var a = lengths%2 === 0 ? true:false;
-  //   if(a){
-  //     return  this.foryoudatacolume.slice(0, lengths/2)
-  //   }else{
-  //      return  this.foryoudatacolume.slice(0,  Math.ceil(lengths/2));
-  //   }
-  // },
-  //  foryoudatacolume2: function () {
-  //    var lengths = this.foryoudatacolume.length;
-  //    var a = lengths%2 === 0 ? true:false;
-  //   if(a){
-  //     return  this.foryoudatacolume.slice(lengths/2)
-  //   }else{
-  //      return  this.foryoudatacolume.slice(Math.ceil(lengths/2));
-  //   }
-  // }
+    // foryoudatacolume1: function () {
+    //   var lengths = this.foryoudatacolume.length;
+    //   var a = lengths%2 === 0 ? true:false;
+    //   if(a){
+    //     return  this.foryoudatacolume.slice(0, lengths/2)
+    //   }else{
+    //      return  this.foryoudatacolume.slice(0,  Math.ceil(lengths/2));
+    //   }
+    // },
+
   },
   //已成功挂载，相当ready()
   mounted: function () {
     var _this = this;
     this.$nextTick(function () {
-       this.loadForYouData();
+      this.loadForYouData();
 
     })
   },
@@ -346,11 +333,11 @@ export default {
       var lengths = this.foryoudatacolume.length;
       var a = lengths % 2 === 0 ? true : false;
       if (a) {
-        this.foryoudatacolume1 =  this.foryoudatacolume.slice(0, lengths / 2);
-        this.foryoudatacolume2 =  this.foryoudatacolume.slice(lengths/2)
+        this.foryoudatacolume1 = this.foryoudatacolume.slice(0, lengths / 2);
+        this.foryoudatacolume2 = this.foryoudatacolume.slice(lengths / 2)
       } else {
-         this.foryoudatacolume1 =  this.foryoudatacolume.slice(0,  Math.ceil(lengths/2));
-         this.foryoudatacolume2 =  this.foryoudatacolume.slice(Math.ceil(lengths/2));
+        this.foryoudatacolume1 = this.foryoudatacolume.slice(0, Math.ceil(lengths / 2));
+        this.foryoudatacolume2 = this.foryoudatacolume.slice(Math.ceil(lengths / 2));
       }
     },
 
@@ -358,24 +345,31 @@ export default {
       this.loading = true;
       var _this = this;
       // MintUI.Indicator.open('加载中...');
-      for(var i = 0;i<3;i++){
+      for (var i = 0; i < 3; i++) {
         this.foryoudatacolume1.push({
-            "image350Path": "https://ae01.alicdn.com/kf/HTB1qcNWOXXXXXXbaFXXq6xXFXXXB.jpg_350x350.jpg",        
-          "lowerPrice": "10.44",  
+          "image350Path": "https://ae01.alicdn.com/kf/HTB1qcNWOXXXXXXbaFXXq6xXFXXXB.jpg_350x350.jpg",
+          "lowerPrice": "10.44",
         })
 
-         this.foryoudatacolume2.push({
-            "image350Path": "https://ae01.alicdn.com/kf/HTB1lXrGLFXXXXblXFXXq6xXFXXXn.jpg_350x350.jpg",
+        this.foryoudatacolume2.push({
+          "image350Path": "https://ae01.alicdn.com/kf/HTB1lXrGLFXXXXblXFXXq6xXFXXXn.jpg_350x350.jpg",
           "lowerPrice": "8.0",
-         })
+        })
       }
-       setTimeout(function(){
-         _this.loading = false;
-       },2000)
+      setTimeout(function () {
+        _this.loading = false;
+      }, 2000)
     },
-
-
-
+    // 打开 侧边栏
+    changeSli:function(){      
+       this.popslide = !this.popslide;     
+    },
+    // 监听 组件内关闭侧边栏
+    changePop: function (msg) {
+      if (!msg) {
+        this.popslide = !this.popslide;
+      }
+    }
   }
 }
 </script>
@@ -405,6 +399,7 @@ body {
 
 
 
+
 /*头部*/
 
 .three-bar {
@@ -421,136 +416,31 @@ body {
   min-width: 40px;
   display: inline-block;
 }
-.a-logo{
-      width: 142px;
-    height: 56px;
-    display: inline-block;
-    margin-left: 20px;
+
+.a-logo {
+  width: 142px;
+  height: 56px;
+  display: inline-block;
+  margin-left: 20px;
 }
-.a-logo img{
-   width: 142px;
+
+.a-logo img {
+  width: 142px;
   height: 56px;
 }
 
-.logo{
-      position: fixed;
-    width: 142px;
-    height: 56px;
-    z-index: 100;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-
+.logo {
+  position: fixed;
+  width: 142px;
+  height: 56px;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
-
-
-
-
-
-
-
-/*侧边栏*/
-
-.mint-popup-left {
-  width: 85%;
-  height: 102%;
-}
-
-#app .v-modal {
-  opacity: 0.15;
-}
-
-.slide_user {
-  box-sizing: border-box;
-  height: 148px;
-  background-color: #e62e02;
-  overflow: hidden;
-  background-image: url(../../../assets/image/slidebg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.portrait {
-  padding: 16px;
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-}
-
-.portrait img {
-  display: block;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-}
-
-.drawer-unlogin {
-  padding: 15px 16px 16px;
-  box-sizing: border-box;
-  width: 100%;
-  white-space: nowrap;
-  font-size: 15px;
-  line-height: 1.2;
-  color: #fff;
-}
-
-.drawer-signin {
-  padding: 0 6px 0 0;
-  border-right: solid 1px #fff;
-  display: inline-block;
-  color: #fff;
-  font-size: 15px;
-  line-height: 1.2;
-}
-
-.drawer-join {
-  padding-left: 2px;
-  display: inline-block;
-  color: #fff;
-  font-size: 15px;
-  line-height: 1.2;
-}
-
-
-
-
-
-
-
-
-/*菜单 */
-
-.am-list {
-  margin-bottom: 1.6rem;
-}
-
-.am-list-border>li>a {
-  padding: 1.3rem;
-  padding-left: 1rem;
-  color: #000;
-  display: block;
-  box-sizing: border-box;
-}
-
-.am-list-border>li>a i {
-  font-size: 20px;
-  margin-right: 20px;
-}
-
-.am-list-border>li>a i:before {
-  vertical-align: -15%;
-}
-
-
-
-
-
-
-
-/*轮播图*/
-
+/*轮播图 */
 .slides-bayax {
   margin-top: 56px;
   height: 8rem;
@@ -586,6 +476,7 @@ body {
 
 
 
+
 /*第三部分  */
 
 .third {
@@ -611,6 +502,7 @@ body {
 img {
   max-width: 100%
 }
+
 
 
 

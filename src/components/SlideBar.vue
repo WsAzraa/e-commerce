@@ -1,14 +1,9 @@
 <template>
   <div>
-    <!-- <x-header class="headfix">{{headfont}}</x-header> -->
-    <div class="">组我擦件
-      <p>{{slide}}</p>
-      <button @click="changepopsslide">emit</button>
-    </div>
-    <mt-popup v-model="ssbar" position="left" class="">
+    <mt-popup v-model="ssbar" position="left">
       <div class="slide_user">
         <div class="portrait">
-          <!-- <img src="../../../assets/image/userimg.png"> -->
+          <img src="../assets/image/userimg.png">
         </div>
         <div class="drawer-unlogin">
           <a href="login.html" class="drawer-signin" style="color:#eee">Sign IN</a>
@@ -43,7 +38,6 @@
       </ul>
 
     </mt-popup>
-
   </div>
 </template>
 
@@ -71,34 +65,107 @@ export default {
   },
   watch: {
     spopslide(val) {
-      this.ssbar = val;//②监听外部对props属性result的变更，并同步到组件内的data属性myResult中
+      console.log('组件内查看'+val);
+      this.ssbar = val;//②监听外部对props属性spopslide的变更，并同步到组件内的data属性ssbar中
     },
     ssbar(val) {
-      //xxcanghai 小小沧海 博客园
-      this.$emit('change-pop')
-      // this.$emit("on-result-change",val);//③组件内对myResult变更后向外部发送事件通知
+      console.log('变化了')
+      this.$emit('change-pop',this.ssbar);//③组件内对ssbar变更后向外部发送事件通知
     }
   },
   methods: {
-    changepopsslide() {
-      this.ssbar = !this.ssbar;
-    }
+    // changepopsslide() {
+    //   this.ssbar = !this.ssbar;
+    // }
 
   }
 }
 </script>
 
-<style lang="less">
-.headfix {
-  position: fixed!important;
-  z-index: 77;
-  width: 100%;
-  left: 0;
-  top: 0;
+<style>
+/*侧边栏*/
+
+.mint-popup-left {
+  width: 85%;
+  height: 102%;
 }
 
-.headMargin {
-  clear: both;
-  height: 50px;
+#app .v-modal {
+  opacity: 0.15;
+}
+
+.slide_user {
+  box-sizing: border-box;
+  height: 148px;
+  background-color: #e62e02;
+  overflow: hidden;
+  background-image: url(../assets/image/slidebg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.portrait {
+  padding: 16px;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+}
+
+.portrait img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.drawer-unlogin {
+  padding: 15px 16px 16px;
+  box-sizing: border-box;
+  width: 100%;
+  white-space: nowrap;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.drawer-signin {
+  padding: 0 6px 0 0;
+  border-right: solid 1px #fff;
+  display: inline-block;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.drawer-join {
+  padding-left: 2px;
+  display: inline-block;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+
+/*菜单 */
+
+.am-list {
+  margin-bottom: 1.6rem;
+}
+
+.am-list-border>li>a {
+  padding: 1.3rem;
+  padding-left: 1rem;
+  color: #000;
+  display: block;
+  box-sizing: border-box;
+}
+
+.am-list-border>li>a i {
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.am-list-border>li>a i:before {
+  vertical-align: -15%;
 }
 </style>

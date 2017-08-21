@@ -44,9 +44,7 @@
     <!-- 轮播图 -->
     <section class="slides-bayax">
       <mt-swipe :auto="4000" class="swipe">
-        <mt-swipe-item v-for="(item,index) in slides">
-          <img v-bind:src="item.url">
-        </mt-swipe-item>
+        <mt-swipe-item v-for="item in slides"><img v-bind:src="item.url"></mt-swipe-item>
       </mt-swipe>
     </section>
     <section class="ms-add-session">

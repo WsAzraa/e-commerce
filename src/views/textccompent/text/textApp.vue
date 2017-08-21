@@ -1,9 +1,10 @@
 <template>
   <div class="parent">
-    <h1>父组件</h1>
-    <Child v-bind:parentToChild="parentMsg"></Child>
-    <slide-bar :spopslide="popslide" :slide="slides"   @change-pop="changePop">侧边栏</slide-bar>
-    <div>123123123</div>
+    <!-- <h1>父组件</h1> -->
+    <!-- <Child v-bind:parentToChild="parentMsg"></Child> -->
+    <button v-on:click="changeSli">按钮</button>
+    <slide-bar :spopslide="popslide"    @change-pop="changePop">侧边栏</slide-bar>
+    
   </div>
 </template>
 
@@ -23,7 +24,19 @@
     components: {Child,SlideBar},
     methods:{
        'changePop' (msg) {
-      this.popslide = !this.popslide;
+         if(!msg){
+             this.popslide = !this.popslide;
+         }
+     
+    },
+    changeSli:function(){
+       console.log('更改前'+this.popslide)
+      // if(this.popslide){
+      //   this.popslide = !this.popslide;
+      // }
+       this.popslide = !this.popslide;
+        console.log('更改后'+this.popslide)
+      
     }
     }
   }
