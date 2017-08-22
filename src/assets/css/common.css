@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'ico-bayax';
-   src:  url('../font/ico-bayax.eot?a8uvk3');
-  src:  url('../font/ico-bayax.eot?a8uvk3#iefix') format('embedded-opentype'),
-    url('../font/ico-bayax.ttf?a8uvk3') format('truetype'),
-    url('../font/ico-bayax.woff?a8uvk3') format('woff'),
-    url('../font/ico-bayax.svg?a8uvk3#ico-bayax') format('svg');
+    src:  url('../font/ico-bayax.eot?56ggl9');
+  src:  url('../font/ico-bayax.eot?56ggl9#iefix') format('embedded-opentype'),
+    url('../font/ico-bayax.ttf?56ggl9') format('truetype'),
+    url('../font/ico-bayax.woff?56ggl9') format('woff'),
+    url('../font/ico-bayax.svg?56ggl9#ico-bayax') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -67,6 +67,12 @@
 }
 .icon-list-unordered:before {
   content: "\e909";
+}
+.icon-plus2:before {
+  content: "\ea0a";
+}
+.icon-minus:before {
+  content: "\ea0b";
 }
 .icon-arrow-up2:before {
   content: "\ea3a";

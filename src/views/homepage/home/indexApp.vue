@@ -15,7 +15,7 @@
       </mt-button>
       <mt-button slot="right">
         <label class="icon-label">
-          <span class="icon-cart icon-bayax-home"></span>
+           <a href="../car/car.html"><span class="icon-cart icon-bayax"></span></a>
         </label>
       </mt-button>
     </mt-header>

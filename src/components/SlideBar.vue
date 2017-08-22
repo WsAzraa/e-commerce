@@ -12,7 +12,7 @@
       </div>
       <ul class="am-list am-list-border">
         <li>
-          <a href="index.html">
+          <a href="../homepage/index.html">
             <i class="icon-home"></i>
             Home
           </a>
@@ -24,7 +24,7 @@
           </a>
         </li>
         <li>
-          <a href="shoppingcart.html">
+          <a href="../car/car.html">
             <i class="icon-cart"></i>
             Cart
           </a>

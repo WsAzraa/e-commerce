@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-  
+
     <mt-header fixed>
-      <a slot="left">
+      <a href="../homepage/index.html" slot="left">
         <mt-button icon="back"></mt-button>
       </a>
       <mt-button>关闭</mt-button>
@@ -15,7 +15,8 @@
       </mt-button>
       <mt-button slot="right">
         <label class="icon-label">
-          <span class="icon-cart icon-bayax"></span>
+          <a href="../car/car.html"><span class="icon-cart icon-bayax" style="color:#fff"></span></a>
+          
         </label>
       </mt-button>
       <mt-button slot="right">
@@ -23,24 +24,24 @@
           <span class="icon-more_vert icon-bayax"></span>
         </label>
       </mt-button>
-  
+
     </mt-header>
-  
+
     <!-- <h1>mint-ui-example</h1> -->
     <!-- <button @click="aaa()">按钮</button> -->
     <!-- <mt-button @click.native="popupVisible3 = true" size="large">右侧弹出 popup</mt-button> -->
-  
+
     <!-- <ul
-    v-infinite-scroll="loadMore"
-    infinite-scroll-disabled="loading"
-    infinite-scroll-distance="10">
-    <li v-for="item in list">{{ item }}</li>
-  </ul>
-  <p v-show="loadings" class="page-infinite-loading">
-    <mt-spinner type="fading-circle"></mt-spinner>
-    加载中...
-  </p>
-  -->
+      v-infinite-scroll="loadMore"
+      infinite-scroll-disabled="loading"
+      infinite-scroll-distance="10">
+      <li v-for="item in list">{{ item }}</li>
+    </ul>
+    <p v-show="loadings" class="page-infinite-loading">
+      <mt-spinner type="fading-circle"></mt-spinner>
+      加载中...
+    </p>
+    -->
     <!-- 轮播图 -->
     <section class="slides-bayax">
       <mt-swipe :auto="4000" class="swipe">
@@ -52,13 +53,13 @@
         <i class="icon-heart"></i>
       </span>
     </section>
-  
+
     <section class="ms-rc-subject">
       <h1 class="ms-rc-detail-subject">
         Baseus 10000mAh USB Power Bank 15mm Ultra Slim Powerbank Portable External Battery Charger For iPhone Mobile Phone Poverbank
       </h1>
     </section>
-  
+
     <section class="ms-detail-price">
       <div class="detail-price-container">
         <span class="price-span">US $4.90 - US $5.60</span>
@@ -76,7 +77,7 @@
       </div>
       <p class="ms-bulk-price"></p>
     </section>
-  
+
     <section class="ms-block ms-rc-shadow">
       <div class="ms-rc-detail-orders-stars">
         <ul class="sumary-list  util-clearfix">
@@ -105,7 +106,7 @@
       </div>
       <div class="ms-rc-detail-coupon ms-rc-ripple ms-rc-custom"></div>
     </section>
-  
+
     <section class="ms-detail-sku ms-sku-row" data-am-modal="{target: '#ai-j5kozkhx'}">
       <p class="detail-sku-bar">Ships From,Color</p>
       <p class="detail-shipping-bar">
@@ -125,14 +126,14 @@
           <button class="ms-button-secondary ms-rc-shadow ms-rc-ripple">Add to cart</button>
           <button class="ms-button-primary ms-rc-shadow ms-rc-ripple">Buy now</button>
         </div>
-  
+
       </div>
       <div id="detail-btn-fixed" style="background-color: red"></div>
     </section>
-  
+
     <!-- 商品描述 -->
     <section style="background:#fff">
-  
+
       <div class="am-popup-bd" style="padding: 0;padding-top: 12px;">
         <section class="ms-item-desc">
           <div class="tab">
@@ -144,39 +145,39 @@
                 <table>
                   <tbody>
                     <tr>
-  
+
                       <td>Retail Package</td>
                       <td>Yes</td>
                     </tr>
                     <tr>
-  
+
                       <td>Compatible iPhone Model</td>
                       <td>
                         iPhone 6 Plus,iPhone 6s,iPhone 4s,iPhone 5s,iPhone5c,iPhone 6s plus,iphone 7 Plus,iPhone 6,iphone 3G/3GS,iPhone 4,iphone 7,iPhone SE,iPhone 5
                       </td>
                     </tr>
                     <tr>
-  
+
                       <td>Function</td>
                       <td>Waterproof,Dirt-resistant</td>
                     </tr>
                     <tr>
-  
+
                       <td>Type</td>
                       <td>Pouch</td>
                     </tr>
                     <tr>
-  
+
                       <td>Brand Name</td>
                       <td>keysion</td>
                     </tr>
                     <tr>
-  
+
                       <td>Compatible Brand</td>
                       <td>Apple iPhones</td>
                     </tr>
                     <tr>
-  
+
                       <td>Design</td>
                       <td>Sports</td>
                     </tr>
@@ -187,7 +188,7 @@
           </div>
         </section>
       </div>
-  
+
       <div class="descripiton descripiton-show">
         <div class="title">Descripition</div>
         <div class="desc" style="width: 100%">
@@ -266,14 +267,14 @@
                 </a>
               </span>
             </header>
-  
+
             <div id="md-feedback" class="no-top-border">
               <div class="z fdb-body active">
                 <div class="wrapper">
                   <div class="z fdb-scores fdb-block fdb-section" data-role="scores"></div>
                   <div class="z fdb-pics fdb-block fdb-section" id="summary-fdb-pics" data-role="summary" style="display: block;">
                     <ul class="z fdb-pics-wrapper clearfix get-sq">
-  
+
                       <li class="z fdb-pic ">
                         <div class=" pic has-bk">
                           <div class="z img-wrapper">
@@ -281,7 +282,7 @@
                           </div>
                         </div>
                       </li>
-  
+
                       <li class="z fdb-pic ">
                         <div class=" pic has-bk">
                           <div class="z img-wrapper">
@@ -289,7 +290,7 @@
                           </div>
                         </div>
                       </li>
-  
+
                       <li class="z fdb-pic last">
                         <div class="pic">
                           <div class="z img-wrapper centered">
@@ -338,12 +339,12 @@
                           </div>
                           <div class="content">
                             <p>thankyou</p>
-  
+
                           </div>
-  
+
                         </div>
                       </div>
-  
+
                       <div class="z fdb-block fdb-comment">
                         <div class="infos">
                           <div class="avatar">
@@ -380,12 +381,12 @@
                           </div>
                           <div class="content">
                             <p></p>
-  
+
                           </div>
-  
+
                         </div>
                       </div>
-  
+
                       <div class="z fdb-block fdb-comment">
                         <div class="infos">
                           <div class="avatar">
@@ -424,12 +425,12 @@
                             <p>
                               O produto chegou com uma rapidez surpreendente o processo de importação levou aproximadamente 20 dias de Singapura á São Paulo, Brazil. O vendedor é muito competente e a empresa está de Parabéns! embora simples, estou bem satisfeito com o produto!
                             </p>
-  
+
                           </div>
-  
+
                         </div>
                       </div>
-  
+
                       <div class="z fdb-block fdb-comment">
                         <div class="infos">
                           <div class="avatar">
@@ -468,12 +469,12 @@
                             <p>
                               Chegou em 21 dias bem antes do prazo de entrega muito bom vendedor pretendo comprar mais protudos
                             </p>
-  
+
                           </div>
-  
+
                         </div>
                       </div>
-  
+
                       <div class="z fdb-block fdb-comment">
                         <div class="infos">
                           <div class="avatar">
@@ -510,9 +511,9 @@
                           </div>
                           <div class="content">
                             <p></p>
-  
+
                           </div>
-  
+
                         </div>
                       </div>
                     </div>
@@ -525,7 +526,7 @@
         </div>
       </div>
     </section>
-  
+
     <section>
       <div id="recommend">
         <div class="recommend-component">
@@ -563,11 +564,11 @@
                         </div>
                       </div>
                       <div class="ms-lego-container" style="padding: 8px 16px 16px;">
-  
+
                         <div class="ms-lego-min-price">
                           US $12.31</div>
                         <div class="price-discount util-clearfix">
-  
+
                         </div>
                       </div>
                     </a>
@@ -580,13 +581,13 @@
                         </div>
                       </div>
                       <div class="ms-lego-container" style="padding: 8px 16px 16px;">
-  
+
                         <div class="ms-lego-min-price">US $11.38</div>
                         <div class="price-discount util-clearfix"></div>
                       </div>
                     </a>
                   </li>
-  
+
                 </ul>
               </div>
             </div>
@@ -594,7 +595,7 @@
           <div>
             <div class="ms-column ms-lego-two-column ms-lego-shadow">
               <div>
-  
+
                 <div class="ms-lego-container title" style="padding: 15px 16px;">
                   More To Love(
                   <span>6</span>
@@ -611,7 +612,7 @@
                         </div>
                       </div>
                       <div class="ms-lego-container" style="padding: 8px 16px 16px;">
-  
+
                         <div class="ms-lego-min-price">US $15.79</div>
                         <div class="price-discount util-clearfix"></div>
                       </div>
@@ -625,7 +626,7 @@
                         </div>
                       </div>
                       <div class="ms-lego-container" style="padding: 8px 16px 16px;">
-  
+
                         <div class="ms-lego-min-price">US $15.79</div>
                         <div class="price-discount util-clearfix"></div>
                       </div>
@@ -639,7 +640,7 @@
                         </div>
                       </div>
                       <div class="ms-lego-container" style="padding: 8px 16px 16px;">
-  
+
                         <div class="ms-lego-min-price">US $15.79</div>
                         <div class="price-discount util-clearfix"></div>
                       </div>
@@ -653,13 +654,13 @@
                         </div>
                       </div>
                       <div class="ms-lego-container" style="padding: 8px 16px 16px;">
-  
+
                         <div class="ms-lego-min-price">US $15.79</div>
                         <div class="price-discount util-clearfix"></div>
                       </div>
                     </a>
                   </li>
-  
+
                 </ul>
               </div>
             </div>
@@ -673,7 +674,7 @@
         <div class="am-popup-hd">
           <span v-on:click="popupVisible3 = !popupVisible3" class="am-close">&times;</span>
           <h4 class="am-popup-title">Product Options</h4>
-  
+
         </div>
         <div class="ms-panel-bodyer" data-role="panel-body">
           <section class="ms-sku">
@@ -690,55 +691,55 @@
                 <p class="sku-desc">please select Color</p>
               </div>
             </header>
-  
+
             <div class="sku-body ms-sku">
               <ul>
-  
+
                 <li data-id="14">
                   <p class="sku-item-title">
                     Color
                     <span class="current-prop"></span>
                   </p>
-  
+
                   <div class="sku-props">
-  
+
                     <span class="sku-color" data-id="14:193">
                       <img alt="sku" bigpic="https://ae01.alicdn.com/kf/HTB1mutnRFXXXXaUXFXXq6xXFXXXu/KEYSION-Waterproof-Bag-With-Luminous-Underwater-Pouch-Phone-Case-For-iPhone-7-7-Plus-6-6s.jpg" src="https://ae01.alicdn.com/kf/HTB1mutnRFXXXXaUXFXXq6xXFXXXu/KEYSION-Waterproof-Bag-With-Luminous-Underwater-Pouch-Phone-Case-For-iPhone-7-7-Plus-6-6s.jpg_120x120.jpg">
-  
+
                       <span class="sku-disabled-mask"></span>
                     </span>
                     <span class="sku-color" data-id="14:29">
                       <img alt="sku" bigpic="https://ae01.alicdn.com/kf/HTB13CgURpXXXXcQapXXq6xXFXXXX/KEYSION-Waterproof-Bag-With-Luminous-Underwater-Pouch-Phone-Case-For-iPhone-7-7-Plus-6-6s.jpg" src="https://ae01.alicdn.com/kf/HTB13CgURpXXXXcQapXXq6xXFXXXX/KEYSION-Waterproof-Bag-With-Luminous-Underwater-Pouch-Phone-Case-For-iPhone-7-7-Plus-6-6s.jpg_120x120.jpg">
-  
+
                       <span class="sku-disabled-mask"></span>
                     </span>
                     <span class="sku-color" data-id="14:10">
                       <img alt="sku" bigpic="https://ae01.alicdn.com/kf/HTB1qQhlRFXXXXcqXFXXq6xXFXXXf/KEYSION-Waterproof-Bag-With-Luminous-Underwater-Pouch-Phone-Case-For-iPhone-7-7-Plus-6-6s.jpg" src="https://ae01.alicdn.com/kf/HTB1qQhlRFXXXXcqXFXXq6xXFXXXf/KEYSION-Waterproof-Bag-With-Luminous-Underwater-Pouch-Phone-Case-For-iPhone-7-7-Plus-6-6s.jpg_120x120.jpg">
-  
+
                       <span class="sku-disabled-mask"></span>
                     </span>
                     <span class="sku-color" data-id="14:350852">
                       <img alt="sku" bigpic="https://ae01.alicdn.com/kf/HTB1DepFRFXXXXbCXXXXq6xXFXXX6/KEYSION-Waterproof-Bag-With-Luminous-Underwater-Pouch-Phone-Case-For-iPhone-7-7-Plus-6-6s.jpg" src="https://ae01.alicdn.com/kf/HTB1DepFRFXXXXbCXXXXq6xXFXXX6/KEYSION-Waterproof-Bag-With-Luminous-Underwater-Pouch-Phone-Case-For-iPhone-7-7-Plus-6-6s.jpg_120x120.jpg">
-  
+
                       <span class="sku-disabled-mask"></span>
                     </span>
                     <span class="sku-color" data-id="14:496">
                       <img alt="sku" bigpic="https://ae01.alicdn.com/kf/HTB1PcXFRFXXXXbQXXXXq6xXFXXX6/KEYSION-Waterproof-Bag-With-Luminous-Underwater-Pouch-Phone-Case-For-iPhone-7-7-Plus-6-6s.jpg" src="https://ae01.alicdn.com/kf/HTB1PcXFRFXXXXbQXXXXq6xXFXXX6/KEYSION-Waterproof-Bag-With-Luminous-Underwater-Pouch-Phone-Case-For-iPhone-7-7-Plus-6-6s.jpg_120x120.jpg">
-  
+
                       <span class="sku-disabled-mask"></span>
                     </span>
                     <span class="sku-color" data-id="14:173">
                       <img alt="sku" bigpic="https://ae01.alicdn.com/kf/HTB1UNw6RpXXXXchaXXXq6xXFXXXT/KEYSION-Waterproof-Bag-With-Luminous-Underwater-Pouch-Phone-Case-For-iPhone-7-7-Plus-6-6s.jpg" src="https://ae01.alicdn.com/kf/HTB1UNw6RpXXXXchaXXXq6xXFXXXT/KEYSION-Waterproof-Bag-With-Luminous-Underwater-Pouch-Phone-Case-For-iPhone-7-7-Plus-6-6s.jpg_120x120.jpg">
-  
+
                       <span class="sku-disabled-mask"></span>
                     </span>
                     <span class="sku-color" data-id="14:175">
                       <img alt="sku" bigpic="https://ae01.alicdn.com/kf/HTB1HfxyRFXXXXb0XpXXq6xXFXXXO/KEYSION-Waterproof-Bag-With-Luminous-Underwater-Pouch-Phone-Case-For-iPhone-7-7-Plus-6-6s.jpg" src="https://ae01.alicdn.com/kf/HTB1HfxyRFXXXXb0XpXXq6xXFXXXO/KEYSION-Waterproof-Bag-With-Luminous-Underwater-Pouch-Phone-Case-For-iPhone-7-7-Plus-6-6s.jpg_120x120.jpg">
-  
+
                       <span class="sku-disabled-mask"></span>
                     </span>
                   </div>
-  
+
                 </li>
               </ul>
               <section class="ms-row hairline ms-rc-ripple ms-rc-custom">
@@ -765,7 +766,7 @@
                   <span class="numberic-text">3289 pieces Left</span>
                 </p>
               </section>
-  
+
               <section class="ms-sku-shipping ms-shipping-wrap">
                 <header class="shipping-header">
                   <p class="ms-row-title ms-rc-ripple ms-rc-custom">
@@ -790,9 +791,9 @@
                   </div>
                   <p class="sku-shipping-error"></p>
                 </header>
-  
+
                 <ul class="ms-shipping-list ms-hide">
-  
+
                   <li class="ms-rc-ripple ms-rc-custom" data-index="0" data-service-name="CAINIAO_STANDARD" data-company="AliExpress Standard Shipping" data-cost="Free Shipping">
                     <div class="shipping-title clearfix">
                       <span>Free Shipping</span>
@@ -835,7 +836,7 @@
                   </li>
                 </ul>
               </section>
-  
+
               <section class="ms-detail-btn-wrap">
                 <div class="store ms-rc-ripple">
                   <a href="//m.aliexpress.com/store/storeHome.htm?sellerAdminSeq=221926657">
@@ -847,12 +848,12 @@
                   <button class="ms-button-primary ms-rc-shadow ms-rc-ripple" data-role="buy-now" data-float="true">Buy now&nbsp;</button>
                 </div>
               </section>
-  
+
             </div>
           </section>
         </div>
       </div>
-  
+
     </mt-popup>
     <!-- 固定 操作栏 -->
     <section id="detail-btn-fixed-bottom" class="ms-detail-btn-fixed ms-rc-shadow">
@@ -868,7 +869,7 @@
         </div>
       </div>
     </section>
-  
+
   </div>
 </template>
 
@@ -1008,6 +1009,7 @@ body {
 }
 
 
+
 /*头部*/
 
 #app .mint-header {
@@ -1018,6 +1020,7 @@ body {
   min-width: 36px;
   display: inline-block;
 }
+
 
 
 /*轮播图*/
@@ -1045,6 +1048,7 @@ body {
 .slides-bayax .mint-swipe-indicator.is-active {
   background-color: red;
 }
+
 
 
 /*添加关注*/
@@ -1075,6 +1079,7 @@ body {
 
 
 
+
 /*产品信息*/
 
 .ms-rc-subject {
@@ -1094,6 +1099,7 @@ body {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
+
 
 
 /*价格*/
@@ -1181,6 +1187,7 @@ body {
   border-radius: 2px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .24);
 }
+
 
 
 /*商品评分 order*/
@@ -1275,6 +1282,7 @@ body {
 
 
 
+
 /*选项 添加购物车 立即买*/
 
 .ms-sku-row {
@@ -1332,6 +1340,7 @@ body {
   color: #4A90E2;
   font-weight: 600;
 }
+
 
 
 /*买。。购物车灯等*/
@@ -1422,6 +1431,7 @@ body {
   bottom: -13px;
   display: none;
 }
+
 
 
 
@@ -1680,6 +1690,7 @@ body {
 
 
 
+
 /*评论*/
 
 .ms-feedback {
@@ -1696,6 +1707,7 @@ body {
   background: #fff;
   padding: 0 12px;
 }
+
 
 
 /*评论图片*/
@@ -1980,6 +1992,7 @@ body {
 
 
 
+
 /*更多*/
 
 .ms-lego-dialog>.ms-lego-dialog-containter {
@@ -2040,6 +2053,7 @@ body {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
+
 
 
 
@@ -2309,6 +2323,7 @@ body {
 }
 
 
+
 /**
 * background不支持去协议调用,暂不清楚原因
 */
@@ -2444,6 +2459,7 @@ body {
     width: 100%;
   }
 }
+
 
 
 
@@ -2608,13 +2624,13 @@ body {
 .ms-sku .sku-header .sku-price .price-span {
   color: #e62e04;
   font-size: 15px;
-  line-height: 20px
+  line-height: 20px;
 }
 
 .ms-sku .sku-header .sku-price .uint-span {
-  color: #bob2b7;
+   color: #b0b2b7;
   font-size: 12px;
-  line-height: 20px
+  line-height: 20px; 
 }
 
 .ms-sku .sku-header .sku-desc {
