@@ -1,31 +1,37 @@
 @font-face {
-  font-family: 'ico-bayax';
-    src:  url('../font/ico-bayax.eot?56ggl9');
-  src:  url('../font/ico-bayax.eot?56ggl9#iefix') format('embedded-opentype'),
-    url('../font/ico-bayax.ttf?56ggl9') format('truetype'),
-    url('../font/ico-bayax.woff?56ggl9') format('woff'),
-    url('../font/ico-bayax.svg?56ggl9#ico-bayax') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'ico-bayax';
+    src:  url('../font/ico-bayax.eot?fy195z');
+  src:  url('../font/ico-bayax.eot?fy195z#iefix') format('embedded-opentype'),
+    url('../font/ico-bayax.ttf?fy195z') format('truetype'),
+    url('../font/ico-bayax.woff?fy195z') format('woff'),
+    url('../font/ico-bayax.svg?fy195z#ico-bayax') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-  font-family: 'ico-bayax' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.icon-bayax{
-	font-size: 18px;
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: 'ico-bayax' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-bayax {
+    font-size: 18px;
+}
+
+.icon-chevron-down:before {
+  content: "\e90c";
+}
+.icon-chevron-right:before {
+  content: "\e90b";
+}
 .icon-more_vert:before {
   content: "\e900";
 }
@@ -97,46 +103,13 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-body{
-	background: #fff;
-	color: #444;
-	padding: 0;
-	margin: 0;
-	font-size: 14px;
+body {
+    background: #fff;
+    color: #444;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
 }
-
-
-@font-face {font-family: "iconfont";
-  src: url('../font/iconfont.eot?t=1471339595'); 
-  src: url('../font/iconfont.eot?t=1471339595#iefix') format('embedded-opentype'), 
-  url('../font/iconfont.woff?t=1471339595') format('woff'), 
-  url('../font/iconfont.ttf?t=1471339595') format('truetype'), 
-  url('../font/iconfont.svg?t=1471339595#iconfont') format('svg');
-}
-
-
-
-
-.iconfont{
-font-family:"iconfont";
-font-size:16px;font-style:normal;
-vertical-align: middle;
-}                    
-
 
 body,
 html,
@@ -176,33 +149,36 @@ nav,
 article,
 aside,
 canvas {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 img {
-	border: 0;
-	padding: 0;
-	
-	margin: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
 }
+
 a {
-	font-size: 100%;
-	border: 0;
-	color: #333;
-	text-decoration: none;
+    font-size: 100%;
+    border: 0;
+    color: #333;
+    text-decoration: none;
 }
+
 ol,
 ul,
 li {
-	list-style: none;
+    list-style: none;
 }
 
-input,textarea{
-	/*-webkit-tap-highlight-color: rgba(255, 255, 255, 0);*/
-  	/*-webkit-appearance: none; */
+input,
+textarea {
+    /*-webkit-tap-highlight-color: rgba(255, 255, 255, 0);*/
+    /*-webkit-appearance: none; */
 }
+
 * {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
 }
-
