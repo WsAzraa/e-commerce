@@ -318,18 +318,21 @@
       </div>
     </section>
     <div class="border-lines"></div>
+    <foot></foot>
   </div>
 </template>
 
 <script>
 
 import Lib from 'assets/js/Lib';
+import Foot from 'components/Footer.vue';
+
 
 
 export default {
 
   components: {
-
+    Foot
   },
   data() {
     return {
@@ -487,10 +490,7 @@ section.contents {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .24);
 }
 .border-lines{
-  height: 1px;
-  background: #dedede;
   margin-top: 20px;
-  margin-bottom: 100px;
 }
 
 </style>
