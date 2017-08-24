@@ -52,18 +52,28 @@
                     </select>
                 </div>
             </div>
-            <div>
-                 <label class="mint-checklist-label">
-                <span class="mint-checkbox"><input type="checkbox" class="mint-checkbox-input" value="">
-                    <span class="mint-checkbox-core"></span>
-                </span>
-                <span class="mint-checkbox-label">Use this card across all of Amazon</span>
-            </label>
+          
+            <div class="use-crad-across">
+                <label class="mint-checklist-label">
+                    <span class="mint-checkbox"><input type="checkbox" class="mint-checkbox-input" value="">
+                        <span class="mint-checkbox-core"></span>
+                    </span>
+                    <span class="mint-checkbox-label">Use this card across all of Amazon <a>What's this</a></span>
+                     
+                </label>
             </div>
-            
-        </div>
+           
+         
+            <div class="ship-to">
+                <a href="#">
+                    ADD YOUR CARD
+                </a>
+            </div>
 
+        </div>
+        <div class="border-lines"></div>
         </section>
+        
     </div>
 </template>
 
@@ -305,4 +315,25 @@ section.contents {
 .card-time select:last-child{
     float:right;
 }
+
+.use-crad-across{
+    padding-top: 20px;
+}
+
+.ship-to a{
+  display: inline-block;
+  width: 100%;
+  background: #F5CF68;
+  padding: 12px 10px;
+  text-align: center;
+  font-weight: 600;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .24);
+}
+.border-lines{
+  height: 1px;
+  background: #dedede;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+
 </style>

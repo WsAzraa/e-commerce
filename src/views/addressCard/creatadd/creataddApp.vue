@@ -4,7 +4,7 @@
       <h1 class="vux-header-title"><img src="../../../assets/image/logo.png"></h1>
     </div>
     <section class="contents">
-      <h2>Enter a shipping address</h2>
+      <h3>Enter a shipping address</h3>
       <div class="address-div">
         <ul>
           <li>
