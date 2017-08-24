@@ -72,6 +72,7 @@
 
         </div>
         <div class="border-lines"></div>
+        <foot></foot>
         </section>
         
     </div>
@@ -335,7 +336,7 @@ section.contents {
   height: 1px;
   background: #dedede;
   margin-top: 10px;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 
 </style>
