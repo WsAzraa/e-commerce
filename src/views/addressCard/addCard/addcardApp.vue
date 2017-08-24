@@ -80,12 +80,14 @@
 <script>
 
 import Lib from 'assets/js/Lib';
+import Foot from 'components/Footer.vue';
+
 
 
 export default {
 
     components: {
-
+            Foot
     },
     data() {
         return {
