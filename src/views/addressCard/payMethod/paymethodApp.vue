@@ -37,7 +37,7 @@
           </li>
         </ul>
 
-        <div>
+        <div class="bdt bdb" style="height: 60px;line-height: 60px;">
           <mt-cell class="aaa" title="Get a $50 Amazon.com Gift Card upon approval" label="for the Amazon Rewards Visa Card" to="https://www.baidu.com" is-link></mt-cell>
         </div>
         <div>
@@ -60,13 +60,15 @@
         </a>
       </div>
     </section>
-    <div class="border-lines"></div>
+    <foot></foot>
   </div>
 </template>
 
 <script>
 
 import Lib from 'assets/js/Lib';
+import Foot from 'components/Footer.vue';
+
 
 import 'mint-ui/lib/style.css' //最嗨的是他这个直接引入的是一个css文件
 
@@ -77,7 +79,7 @@ Vue.use(MintUI);
 export default {
 
   components: {
-
+      Foot
   },
   data() {
     return {
@@ -179,7 +181,7 @@ section.contents {
   padding-right: 10px;
 }
 .car-code a:first-child{
-   border: .09rem solid #DDDDDD;
+   border: 2px solid #666;
    width: 60%;
    display: inline-block;
    /* float: left; */
@@ -212,12 +214,16 @@ section.contents {
   font-size: 14px;
   font-weight: 600;
 }
-
+.mint-cell-wrapper{
+  height: 58px;
+}
 .mint-cell .mint-cell-text {
   font-weight: 600;
   font-size: 14px;
 }
-
+.aaa{
+  height: 58px;
+}
 .aaa .mint-cell-text {
   font-size: 12px;
   font-weight: 600;
@@ -271,5 +277,11 @@ section.contents {
 
 .edit-delete a:last-child {
   float: right;
+}
+.bdt{
+  border-top: 1px solid #ddd;
+}
+.bdb{
+  border-bottom: 1px solid #ddd;
 }
 </style>

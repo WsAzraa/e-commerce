@@ -6,7 +6,7 @@
 
         <section class="contents">
             <div class="tops">
-                <p>By place your order,you agree to Amazon.com's
+                <p style="font-size:12px;">By place your order,you agree to Amazon.com's
                     <a>privacy notice</a>and
                     <a>conditions of use</a>
                 </p>
@@ -24,7 +24,7 @@
                 <p>Click here to save $6.07 and get FREE Two-Day Shipping with a free Trial of Amazon Prime</p>
             </div>
             <div class="div-4">
-                <mt-cell class="cells" title="Amazon Currency Converter is Enabled" to="https://www.baidu.com" is-link></mt-cell>
+                <mt-cell class="cells bdt bdb" title="Amazon Currency Converter is Enabled" to="https://www.baidu.com" is-link></mt-cell>
             </div>
 
             <h3>Order Summary</h3>
@@ -39,7 +39,7 @@
                         <p class="sss">Estimated delivery:
                             <span>Aug.24,2017</span>
                         </p>
-                        <div class="border-lines"></div>
+                    
                     </li>
                     <li class="order-money">
                         <p>Items:
@@ -55,7 +55,7 @@
                             <span>CNY 8.39</span>
                         </p>
                         <p>Order total:
-                            <span>CNY 8.39</span>
+                            <span>CNY 106.39</span>
                         </p>
                     </li>
                     <li>
@@ -96,7 +96,7 @@
                     <li>
                         <div>
                             <div class="se-pay-cur" v-on:click="show2=!show2">
-                                <div>Selected payment currency
+                                <div>Applicable Exchange Rate
                                     <span class="icon-chevron-up" :class="{ 'icon-chevron-down':!show2}"></span>
                                 </div>
 
@@ -131,7 +131,7 @@
             <h3>Payment information</h3>
             <div class="order-div-2 weekend-delivery">
 
-                <a>
+                <a style="border-bottom: none;">
                     <div>
                         <p>Payment method</p>
                         <p>visa ending in 6819</p>
@@ -140,7 +140,7 @@
                         <span class="icon-chevron-right"></span>
                     </div>
                 </a>
-                <a class="a-top a-2 ">
+                <a class="a-top a-2 " style="border-bottom: none;">
                     <div>
                         <p>Billing address</p>
                         <p>Blade Fang</p>
@@ -150,7 +150,7 @@
                         <span class="icon-chevron-right"></span>
                     </div>
                 </a>
-                <a class="a-2" style="top:-6px;">
+                <a class="a-2" style="top:-6px; border-bottom: none;" >
                     <div>
                         <p>Get a $50 Amazon.com Gift Card upon approval</p>
                         <p>for the Amazon Rewards Visa Card</p>
@@ -165,27 +165,47 @@
                         <a>
                             <input style="padding-left:10px;" type="text" placeholder="Enter Code">
                         </a>
-                        <a>APPLY</a>
+                        <a style="border: none;">APPLY</a>
                     </div>
                 </div>
 
             </div>
+            <h3>Shipment details</h3>
 
               <div class="div-4">
-                <mt-cell class="cells" title="Standard Shippings" to="https://www.baidu.com" is-link></mt-cell>
+                <a style="border-bottom: none;border-top:1px solid #ddd;">
+                    <div>
+                        <p style="height: 40px;line-height: 40px;font-size:14px ;">Standard Shipping</p>
+                    </div>
+                    <div>
+                        <span class="icon-chevron-right"></span>
+                    </div>
+                </a>
                 <div class="div-4-1">
                     <p>Estimated delivery:</p>
                     <p>Aug.24,2017</p>
                 </div>
+                <div class="div-4-2">
+                    <div class="div-4-img">
+                        <img src="https://ae01.alicdn.com/kf/HTB1XH39SXXXXXXoXVXXq6xXFXXXJ.jpg_350x350.jpg_.webp">
+                    </div>
+                </div>
+            </div>
+                <div class="btn-in-cny ship-to">
+                <a href="">
+                    PLACE YOUR ORDER IN CNY
+                </a>
             </div>
         </section>
-        <div class="border-lines"></div>
+        <foot></foot>
     </div>
 </template>
 
 <script>
 
 import Lib from 'assets/js/Lib';
+import Foot from 'components/Footer.vue';
+
 
 import 'mint-ui/lib/style.css' //最嗨的是他这个直接引入的是一个css文件
 
@@ -196,7 +216,7 @@ Vue.use(MintUI);
 export default {
 
     components: {
-
+            Foot
     },
     data() {
         return {
@@ -256,6 +276,12 @@ body {
     background: #F3F3F3 !important;
 }
 
+.bdt{
+  border-top: 1px solid #ddd;
+}
+.bdb{
+  border-bottom: 1px solid #ddd;
+}
 input {
     width: 100%;
     border: none;
@@ -357,6 +383,7 @@ section.contents {
     border-bottom: none;
 }
 
+
 .div-4 .cells .mint-cell-text {
     font-size: 12px;
     font-weight: 600;
@@ -430,7 +457,6 @@ section.contents {
 .order-div-2 {
     margin-top: 10px;
     margin-bottom: 20px;
-    border: 0.09rem solid #dedede;
     padding-bottom: 0;
 }
 
@@ -442,7 +468,7 @@ section.contents {
     position: relative;
     width: 100%;
     margin: 0;
-    /* border: 0.09rem solid #ddd; */
+     border: 0.09rem solid #ddd; 
 }
 
 .weekend-delivery a div {
@@ -489,7 +515,7 @@ section.contents {
 
 .card-div2 {
     margin-top: -9px;
-
+ border: 0.09rem solid #ddd; 
     background: #fff;
     padding: 10px 20px;
 }
@@ -504,7 +530,7 @@ section.contents {
 }
 
 .car-code a:first-child {
-    border: .09rem solid #DDDDDD;
+    border: 2px solid #DDDDDD;
     width: 60%;
     display: inline-block;
     padding: 0;
@@ -522,14 +548,76 @@ section.contents {
     font-weight: 600;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .24);
 }
+.border-lines {
+  height: 1px;
+  background: #DDDDDD;
+  /* margin-top: 20px; */
+  /* margin-bottom: 100px; */
+}
 .div-4-1{
+    margin-top: -3px;
     background:#fff;padding:10px;
     border: .09rem solid #DDDDDD;
     border-left: none;
     border-right: none;
 }
+.div-4-2{
+    margin-top: -3px;
+    background:#fff;padding:10px;
+    border: .09rem solid #DDDDDD;
+    border-left: none;
+    border-right: none;
+}
+.div-4-img{
+    width: 33%;
+}.div-4-img img{
+    width: 100%;
+}
 .div-4-1 p{
     font-weight: 600;color:#C45510; 
+}
+
+.div-4 a {
+    display: inline-block;
+    background: #fff;
+    padding: 10px 20px;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    font-weight: 500;
+}
+
+.div-4 a div {
+    margin: 0;
+    padding: 0;
+}
+
+.div-4 a div:first-child {
+    float: left;
+}
+
+.div-4 a div:first-child p {
+    font-weight: 600;
+}
+
+.div-4 a div:first-child p:last-child {
+    font-size: 12px;
+}
+
+.div-4 a div:last-child {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 1px;
+}
+
+.div-4 a div:last-child span {
+    display: inline-block;
+    font-size: 18px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #c8c8cd;
 }
 
 </style>

@@ -46,6 +46,8 @@
     font-size: 0.2rem!important;
     line-height: 1.5rem!important;
         text-align: center!important;
+            margin-left: -10px;
+    margin-right: -10px;
 }
 .a-space{
     display: inline-block;

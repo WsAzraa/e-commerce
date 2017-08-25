@@ -20,6 +20,7 @@
             </a>
            
             </div>
+                   <div class="border-line"></div>
            
         <div class="card-msg">
             <p>Enter your card information</p>
@@ -69,11 +70,10 @@
                     ADD YOUR CARD
                 </a>
             </div>
-
+                   <div class="border-lines"></div>
         </div>
-        <div class="border-lines"></div>
-        <foot></foot>
         </section>
+        <foot></foot>
         
     </div>
 </template>
@@ -166,7 +166,6 @@ section.contents {
 
 /* cell */
 .mint-cell {
-    background-color: #F3F3F3;
     box-sizing: border-box;
     color: #0069C2;
     font-weight: 600;
@@ -289,11 +288,11 @@ section.contents {
 
 .div-msg {
   /* margin-top: 20px; */
-  border: .09rem solid #949494;
+  border: 2px solid #949494;
 }
 
 .div-msg ul li {
-  border-bottom: 0.09rem solid #949494;
+  border-bottom: 2px solid #949494;
 }
 
 .div-msg ul li:last-child {
@@ -330,13 +329,17 @@ section.contents {
   padding: 12px 10px;
   text-align: center;
   font-weight: 600;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .24);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .24);
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 5px;
 }
 .border-lines{
   height: 1px;
   background: #dedede;
-  margin-top: 10px;
   margin-bottom: 20px;
 }
-
+.border-line{
+  height: 1px;
+  background: #dedede;
+}
 </style>

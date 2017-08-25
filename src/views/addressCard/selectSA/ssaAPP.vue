@@ -43,19 +43,21 @@
           </li>
         </ul>
 
-        <mt-cell title="Add a New Address" to="https://www.baidu.com" is-link></mt-cell>
-         <mt-cell title="Ship to an Amazon Pickup location" to="https://www.baidu.com" is-link></mt-cell>
+        <mt-cell title="Add a New Address" to="https://www.baidu.com" is-link class="bdt"></mt-cell>
+         <mt-cell title="Ship to an Amazon Pickup location" to="https://www.baidu.com" is-link class="bdt bdb"></mt-cell>
 
       </div>
 
     </section>
-    <div class="border-lines"></div>
+    <foot></foot>
   </div>
 </template>
 
 <script>
 
 import Lib from 'assets/js/Lib';
+import Foot from 'components/Footer.vue';
+
 
 import 'mint-ui/lib/style.css' //最嗨的是他这个直接引入的是一个css文件
 
@@ -66,7 +68,7 @@ Vue.use(MintUI);
 export default {
 
   components: {
-
+      Foot
   },
   data() {
     return {
@@ -235,5 +237,14 @@ li.notdefault{
 .edit-delete a:last-child {
   float: right;
 }
-
+.mint-cell-text{
+  font-weight: 700;
+  font-size: 14px;
+}
+.bdt{
+  border-top: 1px solid #ddd;
+}
+.bdb{
+  border-bottom: 1px solid #ddd;
+}
 </style>

@@ -283,7 +283,7 @@
      
       <div class="have-address-detail">
         <div class="address-detail" v-on:click="show = !show">
-          <div>Additional Address Details
+          <div style="height:30px;">Additional Address Details
             <span class="icon-chevron-down" :class="{ 'icon-chevron-right': !show }"></span>
           </div>
 
@@ -392,11 +392,11 @@ section.contents {
 
 .address-div {
   margin-top: 20px;
-  border: .09rem solid #949494;
+  border: 2px solid #949494;
 }
 
 .address-div ul li {
-  border-bottom: 0.09rem solid #949494;
+  border-bottom: 2px solid #949494;
 }
 
 .address-div ul li:last-child {
@@ -409,6 +409,7 @@ section.contents {
   outline: none;
   padding-left: 10px;
   height: 40px;
+  font-weight: 700;
 }
 
 .selects-country {
@@ -448,7 +449,7 @@ section.contents {
   padding:10px 20px;
   position: relative;
   width: 100%;
-
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .24);
 }
 .weekend-delivery a div:first-child{
   float: left;
@@ -472,7 +473,7 @@ section.contents {
   transform:translateY(-50%);
 }
 .security{
-  border: 0.09rem solid #949494;
+  border: 2px solid #949494;
 }
 .security input{
   padding-left:10px;
